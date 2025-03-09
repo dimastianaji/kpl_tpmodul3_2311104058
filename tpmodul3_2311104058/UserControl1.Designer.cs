@@ -28,11 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.getNameBtn = new System.Windows.Forms.Button();
+            this.nameTextBox = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // getNameBtn
+            // 
+            this.getNameBtn.Location = new System.Drawing.Point(560, 184);
+            this.getNameBtn.Name = "getNameBtn";
+            this.getNameBtn.Size = new System.Drawing.Size(75, 23);
+            this.getNameBtn.TabIndex = 0;
+            this.getNameBtn.Text = "GetName";
+            this.getNameBtn.UseVisualStyleBackColor = true;
+            this.getNameBtn.Click += new System.EventHandler(this.getNameBtn_Click);
+            // 
+            // nameTextBox
+            // 
+            this.nameTextBox.Location = new System.Drawing.Point(423, 184);
+            this.nameTextBox.Name = "nameTextBox";
+            this.nameTextBox.Size = new System.Drawing.Size(100, 22);
+            this.nameTextBox.TabIndex = 1;
+            // 
+            // UserControl1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.nameTextBox);
+            this.Controls.Add(this.getNameBtn);
+            this.Name = "UserControl1";
+            this.Size = new System.Drawing.Size(800, 450);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button getNameBtn;
+        private System.Windows.Forms.TextBox nameTextBox;
     }
 }

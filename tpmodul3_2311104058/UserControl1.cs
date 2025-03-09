@@ -16,5 +16,11 @@ namespace tpmodul3_2311104058
         {
             InitializeComponent();
         }
+
+        private void getNameBtn_Click(object sender, EventArgs e)
+        {
+            string name = nameTextBox.Text.ToString();
+            MessageBox.Show(name);
+        }
     }
 }
